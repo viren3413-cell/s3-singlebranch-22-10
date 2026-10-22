@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IT Company</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        nav h2 {
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .service h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1e293b;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0f172a;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>TechNova</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>We Build Digital Solutions</h1>
+        <p>Web Development, Mobile Apps and IT Consulting for Your Business.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Modern and responsive websites for your business.</p>
+            </div>
+
+            <div class="service">
+                <h3>App Development</h3>
+                <p>Powerful mobile applications for Android and iOS.</p>
+            </div>
+
+            <div class="service">
+                <h3>IT Consulting</h3>
+                <p>Smart technology solutions to grow your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Let's Work Together</h2>
+        <p style="margin: 15px 0;">Have a project in mind? Contact us today.</p>
+        <a href="mailto:info@example.com" class="btn">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TechNova. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
